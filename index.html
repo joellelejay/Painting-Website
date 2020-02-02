@@ -1,25 +1,46 @@
 <style>
   .headerContainer{
-    background: blue;
+    background: linear-gradient(rgb(117, 109, 117),rgb(190, 190, 190));
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
   }
-  #name{
-    background: yellow;
-  }
+
   #nav{
-    background: pink;
-    padding: 10 10 0 0;
+    padding: 10 10 0 10;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
   }
+  #name{
+    padding: 5 10 0 10;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+  }
+  a:hover{
+    color: black;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    padding: 10 10 1 10;
+  }
+  
   li{
     display: inline;
   }
+
   main{
     text-align: center;
+    font-family: 'Amatic SC', cursive;
+  }
+
+  #photoArtist{
+    width: 250px;
+    height: auto;
   }
   .paintingContainer{
-    background: red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,10 +48,16 @@
   .paintingIMG{
     width: auto;
     height: 250px;
-    padding: 10;
+    padding: 25 10 0 10;
   }
-
+  .paintingIMG:hover{
+    opacity: 0.6;
+  }
+p{
+  margin: 0 0;
+}
 </style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 <header>
   <div class="headerContainer">
     <div class="headerItem" id="name">
@@ -47,9 +74,15 @@
   <main>
     <section id="About">
       <h2>About the Artist</h2>
+      <img id="photoArtist" src="/Users/joellelejay/Desktop/IMG_4095.jpeg" alt="">
+      <br><br>
+<p>Originally from France, Denis Lejay moved to Vancouver, Canada in August 1982. He started a silk scarf business and eventually became a highschool math and science teacher. </p>
     </section>
     <section id="paintings">
       <h2>Paintings</h2>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
       <div class="paintingContainer">
         <div id="painting1">
         <img class="paintingIMG" src="/Users/joellelejay/Desktop/IMG_9339.jpg" alt="">
