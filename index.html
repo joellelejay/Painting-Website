@@ -1,0 +1,72 @@
+<style>
+  .headerContainer{
+    background: blue;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  #name{
+    background: yellow;
+  }
+  #nav{
+    background: pink;
+    padding: 10 10 0 0;
+  }
+  li{
+    display: inline;
+  }
+  main{
+    text-align: center;
+  }
+  .paintingContainer{
+    background: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .paintingIMG{
+    width: auto;
+    height: 250px;
+    padding: 10;
+  }
+
+</style>
+<header>
+  <div class="headerContainer">
+    <div class="headerItem" id="name">
+      <h2>Denis Lejay</h2>
+    </div>
+    <div class="headerItem" id="nav">
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#paintings">Paintings</a></li>
+      </ul>
+    </div>
+  </div>
+  </header>
+  <main>
+    <section id="About">
+      <h2>About the Artist</h2>
+    </section>
+    <section id="paintings">
+      <h2>Paintings</h2>
+      <div class="paintingContainer">
+        <div id="painting1">
+        <img class="paintingIMG" src="/Users/joellelejay/Desktop/IMG_9339.jpg" alt="">
+        <p class="title">Coffee Time</p>
+        <p class="dimensions">5x5</p>
+      </div>
+      <div id="painting2">
+      <img class="paintingIMG" src="/Users/joellelejay/Desktop/IMG_9343.jpg" alt="">
+      <p class="title">Lighthouse</p>
+      <p class="dimensions">5x5</p>
+    </div>
+    <div id="painting3">
+    <img class="paintingIMG" src="/Users/joellelejay/Desktop/IMG_9342.jpg" alt="">
+    <p class="title">Sounche en Foret</p>
+    <p class="dimensions">5x5</p>
+  </div>
+      </div>
+    </section>
+
+  </main>
